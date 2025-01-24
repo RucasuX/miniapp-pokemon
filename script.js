@@ -23,6 +23,11 @@ btnAction.addEventListener("click", () => {
 
   // Envia dados de volta para o bot do Telegram
   tg.sendData("Botão 'Clique aqui' foi clicado!");
+
+  // Fecha o MiniApp após 2 segundos
+  setTimeout(() => {
+    tg.close();
+  }, 2000); // 2000 milissegundos = 2 segundos
 });
 
 // Lidar com o clique no botão principal
