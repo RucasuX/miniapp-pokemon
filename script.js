@@ -26,6 +26,7 @@ btnAction.addEventListener("click", () => {
 
   // Fecha o MiniApp após 2 segundos
   setTimeout(() => {
+    console.log("Fechando o Mini App..."); // Adicionado para depuração
     tg.close();
   }, 2000); // 2000 milissegundos = 2 segundos
 });
